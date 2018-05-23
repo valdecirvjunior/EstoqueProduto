@@ -1,0 +1,17 @@
+ESTRUTURA DO PROJETO:
+Dominio– Local onde ficam as entidades que representam tabelas de bancos de dados e tipos.
+Repository – Repositórios do Spring Data JPA responsáveis pelo acesso a dados.
+Service – Classes que contém os métodos que controlam as chamadas da camada controller
+Controller – Camada intermediária entre a view e a camada de serviços.
+
+O propósito de @Autowired é injtetar uma instância da classe declarada como atributo no escopo da classe trabalhada sem que a segunda saiba como instanciar a primeira, reduzindo o acoplamento. Pensando em um CRUD, a classe de serviço deve fornecer as opções de recuperação, inserção, edição e exclusão.
+
+THYMELEAF
+Trata-se de um template engine para Java e uma alternativa ao JSP. Os templates são escritos, em sua maioria, com código HTML5 e tem boa integração com o Spring Framework, além da capacidade de processar código CSS e JavaScript.
+
+Alguns comandos utilizados no projeto:
+
+th:each: Percorre uma coleção de objetos enviada pelo controller.
+th:if: Habilita e desabilita controles do HTML de acordo com a condição recebida.
+th:object: Define o objeto que o controller irá receber e enviar por meio de um formulário.
+th:field: Faz bind dos atributos do objeto do formulário com os inputs.
